@@ -17,7 +17,7 @@ If you have a public spreadsheet document, and the first row is a header and you
 ### Usage example
 - Node.js
 ```js
-const PublicGoogleSheetsParser = require('public-google-sheets-parser')
+const PublicGoogleSheetsParser = require('public-google-sheets')
 
 const spreadsheetId = '10WDbAPAY7Xl5DT36VuMheTPTTpqx9x0C5sDCnh4BGps'
 const parser = new PublicGoogleSheetsParser(spreadsheetId)
