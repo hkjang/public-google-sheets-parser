@@ -6,8 +6,6 @@ The document to be used must be a Google Sheets document in the 'public' state a
 
 There is a limitation that only the data of the first sheet can be imported, but it seems that it can be fully utilized for simple purposes, so I made it.
 
-It does not work in browsers where the [fetch API](https://caniuse.com/fetch) is not available.
-
 **No API key required.** This means that the server does not need to use the private key to use the SDK.
 
 You can also use it via free API. Please see [this documentation](https://api.fureweb.com).
@@ -28,28 +26,4 @@ parser.parse().then((items) => {
   console.log(items)
 })
 ```
-
-- browser
-```html
-<script src="https://cdn.jsdelivr.net/npm/public-google-sheets-parser@1.0.9/src/index.min.js"></script>
-
-<script>
-const spreadsheetId = '10WDbAPAY7Xl5DT36VuMheTPTTpqx9x0C5sDCnh4BGps'
-const parser = new PublicGoogleSheetsParser(spreadsheetId)
-parser.parse().then((items) => {
-  // items should be [{ a: 1, b: 2, c: 3}, { a: 4, b: 5, c: 6 }, ...]
-  console.log(items)
-})
-</script>
-```
-
-- free API ([documentation](https://api.fureweb.com))
-
-```sh
-curl -X GET "https://api.fureweb.com/spreadsheets/10WDbAPAY7Xl5DT36VuMheTPTTpqx9x0C5sDCnh4BGps" -H "accept: */*"
-
-# response (application/json)
-{"data":[{"a":1,"b":2,"c":3},{"a":4,"b":5,"c":6},{"a":7,"b":8,"c":9}]}
-```
-**That's it!**
 
