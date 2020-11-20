@@ -1,25 +1,25 @@
 {
-  "name": "public-google-sheets-parser",
+  "name": "public-google-sheets",
   "version": "1.0.13",
   "description": "Public Google sheets parser",
   "main": "./src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fureweb-com/public-google-sheets-parser.git"
+    "url": "git+https://github.com/hkjang/public-google-sheets-parser.git"
   },
   "keywords": [
     "spreadsheets",
     "google sheet"
   ],
   "author": {
-    "name": "fureweb",
-    "email": "fureweb.com@gmail.com"
+    "name": "hkjang",
+    "email": "gagagiga@naver.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fureweb-com/public-google-sheets-parser.git"
+    "url": "https://github.com/hkjang/public-google-sheets-parser.git"
   },
-  "homepage": "https://github.com/fureweb-com/public-google-sheets-parser.git",
+  "homepage": "https://github.com/hkjang/public-google-sheets-parser.git",
   "dependencies": {
     "node-fetch": "^2.6.1"
   }
